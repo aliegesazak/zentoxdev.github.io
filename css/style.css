@@ -68,7 +68,7 @@ body{
     top: 100px;
     right: 830px;
     transition: all 0.3s;
-    background: url(https://cdn.discordapp.com/attachments/823919613250633738/851923369200058448/250x250.png) no-repeat;
+    background: url(https://zentoxdev.github.io/zentox.png) no-repeat;
     }
   
   .dairesel:hover {
@@ -81,7 +81,7 @@ body{
     position: fixed;
     top: 100px;
     right: 830px;
-    background: url(https://cdn.discordapp.com/attachments/823919613250633738/851923381535375390/250x250.gif) no-repeat;
+    background: url(https://zentoxdev.github.io/zentox.gif) no-repeat;
     }
   
   .button {
