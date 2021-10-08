@@ -306,7 +306,7 @@ end
 --Sürekli Jail
 
 --Police Permi Almadan Yapma (Riskli)
-for i=0, 100 do
+for i=0, 500 do
 TriggerServerEvent('esx_policejob:givehandcuff', GetPlayerServerId(PlayerId()))
 Wait(100)
 TriggerServerEvent('esx_policejob:requestarrest', -1, 0.0, vector3(-0.757423, 524.324, 172.1750), vector3(-0.757423, 524.324, 172.1750))
