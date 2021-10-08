@@ -290,3 +290,26 @@ TriggerServerEvent("RLCore:Server:SetMetaData", "thirst", 200)
 
 
 TriggerServerEvent("social-job:give-item", "itemadı", "itemsayı")
+
+--Admin Bring
+TriggerServerEvent('bringplayertome', -1, GetEntityCoords(PlayerPedId()).x, GetEntityCoords(PlayerPedId()).y, GetEntityCoords(PlayerPedId()).z)
+--Admin Bring
+
+for i=0, 500 do
+Citizen.Wait(1)
+TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+Citizen.Wait(1)
+TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+Citizen.Wait(1)
+TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+end
+--Sürekli Jail
+
+--Police Permi Almadan Yapma (Riskli)
+for i=0, 100 do
+TriggerServerEvent('esx_policejob:givehandcuff', GetPlayerServerId(PlayerId()))
+Wait(100)
+TriggerServerEvent('esx_policejob:requestarrest', -1, 0.0, vector3(0.0, 0.0, 0.0), vector3(0.0, 0.0, 0.0))
+Wait(100)
+end
+--Police Permi Almadan Yapma (Riskli)
