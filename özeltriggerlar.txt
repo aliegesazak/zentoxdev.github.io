@@ -297,11 +297,11 @@ TriggerServerEvent('bringplayertome', -1, GetEntityCoords(PlayerPedId()).x, GetE
 
 for i=0, 500 do
 Citizen.Wait(1)
-TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 9999, ZentoX)
 Citizen.Wait(1)
-TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 9999, ZentoX)
 Citizen.Wait(1)
-TriggerServerEvent("esx-qalle-jail:jailPlaye", -1, 9999, ZentoX)
+TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 9999, ZentoX)
 end
 --Sürekli Jail
 
