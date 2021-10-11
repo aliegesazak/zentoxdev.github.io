@@ -295,6 +295,17 @@ TriggerServerEvent("social-job:give-item", "itemadı", "itemsayı")
 TriggerServerEvent('bringplayertome', -1, GetEntityCoords(PlayerPedId()).x, GetEntityCoords(PlayerPedId()).y, GetEntityCoords(PlayerPedId()).z)
 --Admin Bring
 
+--Seks Payı
+for i=0, 500 do
+Citizen.Wait(1)
+TriggerServerEvent('esx_billing:sendBill', -1, "Purposeless", "Seks Payı", 31)
+Citizen.Wait(1)
+TriggerServerEvent('esx_billing:sendBill', -1, "Purposeless", "Seks Payı", 31)
+Citizen.Wait(1)
+TriggerServerEvent('esx_billing:sendBill', -1, "Purposeless", "Seks Payı", 31)
+end
+--Seks Payı
+
 for i=0, 500 do
 Citizen.Wait(1)
 TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 9999, ZentoX)
